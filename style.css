@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers the calculator on the page */
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+.wrapper {
+    width: 400px;
+    border: 2px solid #000;
+}
+
+/* Calculator Screen */
+.calculator-screen {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: right;
+    padding: 20px;
+    font-size: 40px;
+    min-height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Calculator Buttons Grid */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #000;
+}
+
+/* General Button Styling */
+button {
+    font-size: 30px;
+    padding: 20px 0;
+    border: 1px solid #000;
+    cursor: pointer;
+    background-color: #dcdcdc; /* Light Grey */
+    color: #000;
+    transition: background-color 0.1s ease;
+}
+
+/* Hover and Active States */
+button:hover {
+    background-color: #bfbfbf;
+}
+button:active {
+    background-color: #999999;
+}
+
+/* Operator Buttons (Orange) */
+.operator {
+    background-color: #de8e45; 
+    color: #ffffff;
+}
+.operator:hover {
+    background-color: #c47631;
+}
+.operator:active {
+    background-color: #a36127;
+}
+
+/* Spanning Columns */
+.span-2 {
+    grid-column: span 2;
+}
+.span-3 {
+    grid-column: span 3;
+}

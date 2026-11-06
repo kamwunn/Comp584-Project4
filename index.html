@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator App</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>  
+  <body>
+    <div class="wrapper">
+        <!-- Calculator Screen -->
+        <section class="calculator-screen">
+            <div id="display">0</div>
+        </section>
+    
+        <!-- Calculator Buttons -->
+        <section class="calculator-buttons">
+            <button class="span-2 action-btn" data-action="clear">C</button>
+            <button class="action-btn" data-action="backspace">&larr;</button>
+            <button class="operator" data-action="divide">&divide;</button>
+            
+            <button class="number" data-number="7">7</button>
+            <button class="number" data-number="8">8</button>
+            <button class="number" data-number="9">9</button>
+            <button class="operator" data-action="multiply">&times;</button>
+            
+            <button class="number" data-number="4">4</button>
+            <button class="number" data-number="5">5</button>
+            <button class="number" data-number="6">6</button>
+            <button class="operator" data-action="subtract">-</button>
+            
+            <button class="number" data-number="1">1</button>
+            <button class="number" data-number="2">2</button>
+            <button class="number" data-number="3">3</button>
+            <button class="operator" data-action="add">+</button>
+            
+            <button class="span-2 number" data-number="0">0</button>
+            <button class="number" data-number=".">.</button>
+            <button class="operator" data-action="calculate">=</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
